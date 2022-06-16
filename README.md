@@ -1,2 +1,2 @@
 # personal-cv
-Webpage designed in other to get acceptance for data science masters
+Webpage designed in order to get acceptance for data science masters
