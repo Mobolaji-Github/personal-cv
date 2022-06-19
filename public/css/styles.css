@@ -203,7 +203,7 @@ a {
   padding-left: 60px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 993px) {
   /* mobile CSS: hide .desktop div */
   .btn.js-scroll-trigger{
     display: none
