@@ -30,6 +30,9 @@ hr {
 
 }
 
+.navbar-light .navbar-toggler {
+  border:0px
+}
 /* .header-scrolled{
     background-color: #fff;
 } */
@@ -38,6 +41,7 @@ hr {
   margin: 0.3rem 5rem;
   padding: 2rem 0;
   height: 0;
+  vertical-align: middle
 }
 
 #navbarTogglerDemo02 {
@@ -112,6 +116,10 @@ a {
 
 .navbar .navbar-nav .nav-item::after {
   transition: all 0.5s;
+}
+
+.navbar-nav .ml-auto{
+  background-color: #30E3CA;
 }
 
 /* -----------------navigation bar closed-------------- */
@@ -191,6 +199,32 @@ a {
   cursor: pointer;
   margin-top: 1rem;
 }
+.bada{
+  padding-left: 60px;
+}
+
+@media (max-width: 900px) {
+  /* mobile CSS: hide .desktop div */
+  .btn.js-scroll-trigger{
+    display: none
+  }
+  .hide-if-small-screen{
+    display: none
+  }
+  .textlandingname p{
+    padding-left: 0
+  }
+  .textlanding{
+    padding: 2rem 0rem 0rem 0rem;
+  }
+  h4.text-center{
+    margin: 3rem;
+  }
+  .single-skill{
+    padding: 0 3rem;
+  }
+  
+}
 
 /* --------description----------- */
 #description {
@@ -267,16 +301,20 @@ margin-top: 5rem;
 
 /* -------------Certificate section-----------------  */
 #certificate-section{
-  padding: 5rem;
+  padding: 4rem;
 }
 
+.carousel-control-prev, .carousel-control-next{
+  color: #217a65;
+}
 
   /* ------------Reccommendation section---------------- */
 
   #testimonial{
     background-color: rgb(188, 248, 236);
     padding: 3rem 0;
-    height: 25rem;
+    min-height: 25rem;
+    
     
     
   }

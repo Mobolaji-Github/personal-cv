@@ -83,7 +83,7 @@
     <div class="masthead" id="intro">
       <div class="textlanding">
         <div class="textlandingname">
-          <p style="display:inline; font-size: 30px; padding-left: 60px">BADA</p>
+          <p class="bada" style="display:inline; font-size: 30px;">BADA</p>
           <i class="fa-solid fa-face-smile-beam fa-3x"></i>
           <p style="display:inline; font-size: 30px; ">MOBOLAJI</p>
           <hr style="width: 150px; height: 0.9px; border:none;color:#333;background-color:#333;margin-top: 2rem;">
@@ -114,7 +114,7 @@
         <a class="btn  js-scroll-trigger" href="#description">PORTFOLIO</a>
         <a class="btn  js-scroll-trigger" href="#contact">CONTACT</a>
         <a href="#description">
-          <div class="arrowdown"><i class="fa-solid fa-angles-down fa-3x"></i></div>
+          <div class="arrowdown"><i class="fa-solid fa-angles-down fa-2x"></i></div>
         </a>
       </div>
     </div>
@@ -261,41 +261,42 @@
                 <div class="progress-bar2" style="width:80%;"></div>
               </div>
             </div>
-            <div class="single-skill">
-              <p>
-              <h6 style="display:inline-block; font-weight: 300; "> JavaScript - 4 </h6>
-              </p>
-              <div class="container-progress">
-                <div class="progress2 progress-moved">
-                  <div class="progress-bar2" style="width:80%;"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="single-skill">
-              <p>
-              <h6 style="display:inline-block; font-weight: 300; ">Node JS - 4</h6>
-              </p>
-              <div class="container-progress">
-                <div class="progress2 progress-moved">
-                  <div class="progress-bar2" style="width:80%;"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="single-skill">
-              <p>
-              <h6 style="display:inline-block; font-weight: 300; ">Database (Sql & MongoDB) - 4</h6>
-              </p>
-              <div class="container-progress">
-                <div class="progress2 progress-moved">
-                  <div class="progress-bar2" style="width:80%;"></div>
-                </div>
+          </div>
+          <div class="single-skill">
+            <p>
+            <h6 style="display:inline-block; font-weight: 300; "> JavaScript - 4 </h6>
+            </p>
+            <div class="container-progress">
+              <div class="progress2 progress-moved">
+                <div class="progress-bar2" style="width:80%;"></div>
               </div>
             </div>
           </div>
 
+          <div class="single-skill">
+            <p>
+            <h6 style="display:inline-block; font-weight: 300; ">Node JS - 4</h6>
+            </p>
+            <div class="container-progress">
+              <div class="progress2 progress-moved">
+                <div class="progress-bar2" style="width:80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-skill">
+            <p>
+            <h6 style="display:inline-block; font-weight: 300; ">Database (Sql & MongoDB) - 4</h6>
+            </p>
+            <div class="container-progress">
+              <div class="progress2 progress-moved">
+                <div class="progress-bar2" style="width:80%;"></div>
+              </div>
+            </div>
+          </div>
         </div>
+
+
 
         <div class="col-lg-3 skill-right">
           <h4 class="text-center pt-50" style="font-size: 1.3rem"> Data Analytics </h4>
@@ -568,64 +569,7 @@
   </section>
   <!-- End footer Area -->
 
-  <script>
-
-    // var scrollpos = window.scrollY;
-    // var header = document.getElementById("header");
-    // console.log(header);
-
-    // function add_class_on_scroll() {
-    //   header.classList.add("afterscroll ");
-    // }
-
-    // function remove_class_on_scroll() {
-    //   header.classList.remove("afterscroll ");
-    // }
-
-    // window.addEventListener('scroll', function () {
-      
-    //   scrollpos = window.scrollY;
-
-    //   if (scrollpos > 10) {
-    //     add_class_on_scroll();
-    //   }
-    //   else {
-    //     remove_class_on_scroll();
-    //   }
-    //   console.log(scrollpos);
-    // });
-
-
-    $(function () {
-      $(document).scroll(function () {
-        var $nav = $(".header-scrolled");
-        $nav.toggleClass('afterscroll ', $(this).scrollTop() > $nav.height());
-      });
-    })
-
-    $(document).ready(function () {
-      $(".fa-brands").hover(
-        function () {
-          $(this).addClass("fa-fade");
-        },
-        function () {
-          $(this).removeClass("fa-fade");
-        }
-      );
-    });
-
-    $(document).ready(function () {
-      $(".fa-angles-down").hover(
-        function () {
-          $(this).addClass("fa-bounce");
-        },
-        function () {
-          $(this).removeClass("fa-bounce");
-        });
-    });
-
-  </script>
-
+  <%- include("script"); -%>
 
 
 
