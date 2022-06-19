@@ -203,31 +203,7 @@ a {
   padding-left: 3.75rem;
 }
 
-@media (max-width: 993px) {
-  /* mobile CSS: hide .desktop div */
-  .btn.js-scroll-trigger{
-    display: none
-  }
-  .hide-if-small-screen{
-    display: none
-  }
-  .textlandingname p{
-    padding-left: 0
-  }
-  .textlanding{
-    padding: 2rem 0rem 0rem 0rem;
-  }
-  h4.text-center{
-    margin: 3rem;
-  }
-  .single-skill{
-    padding: 0 3rem;
-  }
-  .container{
-    padding: 0;
-  }
-  
-}
+
 
 /* --------description----------- */
 #description {
@@ -310,6 +286,9 @@ margin-top: 5rem;
 .carousel-control-prev, .carousel-control-next{
   color: #217a65;
 }
+.certificate-container{
+  padding: 5rem
+}
 
   /* ------------Reccommendation section---------------- */
 
@@ -331,4 +310,40 @@ margin-top: 5rem;
 
   .footer-area p{
     font-weight: 300;
+  }
+
+
+
+  @media (max-width: 993px) {
+    /* mobile CSS: hide .desktop div */
+    .btn.js-scroll-trigger{
+      display: none
+    }
+    .hide-if-small-screen{
+      display: none
+    }
+    .textlandingname p{
+      padding-left: 0
+    }
+    .textlanding{
+      padding: 2rem 0rem 0rem 0rem;
+    }
+    h4.text-center{
+      margin: 3rem;
+    }
+    .single-skill{
+      padding: 0 3rem;
+    }
+    .container{
+      padding: 2rem;
+    }
+    #certificate-section{
+      padding: 0;
+    }
+    h1.text-center{
+      font-size: 1.5rem;
+    }
+    .certificate-container{
+      padding: 2rem
+    }
   }
