@@ -1,0 +1,18 @@
+{
+  "name": "bolaji-cv",
+  "version": "1.0.0",
+  "description": "personal homepage of mobolaji",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mobolaji",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "jquery": "^3.6.0",
+    "jsdom": "^19.0.0",
+    "nodemon": "^2.0.16"
+  }
+}
