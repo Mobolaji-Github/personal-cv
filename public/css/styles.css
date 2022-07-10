@@ -149,7 +149,7 @@ a {
 /* .textlandingname{
         margin-left: 4rem;
       } */
-.btn {
+#intro .btn {
   background: #ffffff;
   background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
   background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
@@ -172,7 +172,7 @@ a {
   margin: 2rem 1rem;
 }
 
-.btn:hover {
+#intro .btn:hover {
   background: #69b3a2;
   background-image: -webkit-linear-gradient(top, #69b3a2, #217a65);
   background-image: -moz-linear-gradient(top, #69b3a2, #217a65);
@@ -228,6 +228,10 @@ a {
 }
 
 /* ---------skills----------- */
+h6{
+  font-weight: 300;
+}
+
 .home-about-area{
   position: relative;
   top: 3rem;
@@ -287,6 +291,63 @@ margin-top: 5rem;
   padding: 5rem
 }
 
+/* --------------------Portfolio------------ */
+/* Container needed to position the overlay. Adjust the width as needed */
+#portfolio .container {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+/* Make the image to responsive */
+#portfolio .image-fluid{
+  max-width: 100%;
+  height: 100%;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+#portfolio .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #217a65;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+  opacity: 90%;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+#portfolio .project:hover .overlay {
+  transform: scale(1);
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+#portfolio .text {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#portfolio .btn{
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 5px 8px 5px 8px;
+  border: solid #ffffff 1px;
+  text-decoration: none;
+  background: #217a65;
+  margin: 1rem;
+}
+
+
   /* ------------Reccommendation section---------------- */
 
   #testimonial{
@@ -308,8 +369,7 @@ margin-top: 5rem;
   .footer-area p{
     font-weight: 300;
   }
-
-
+  
 
   @media (max-width: 993px) {
     /* mobile CSS: hide .desktop div */
@@ -346,5 +406,14 @@ margin-top: 5rem;
     }
     .certificate-container{
       padding: 2rem
+    }
+    #portfolio .container {
+      width: 70%;}
+    #portfolio .col-md-3{
+      margin: 1rem;
+    }
+    .portfolio-text{
+      position: relative;
+      top: 2rem;
     }
   }
